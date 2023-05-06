@@ -3,8 +3,8 @@ body{
     background-image: url(./DSCN2715.JPG)
 }
 h1{
+    font-family: 'Josefin Sans', sans-serif;
     color:rgb(95, 212, 95);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     src:local(Trebuchet MS);
     font-size: 80px;
     background-color: rgb(20, 19, 97);
