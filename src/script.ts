@@ -1,4 +1,4 @@
-function createParagraph() {
+function createParagraph(): void {
     let para = document.createElement('p');
     para.textContent = '¡Hiciste clic en el botón!';
     document.body.appendChild(para);
