@@ -8,7 +8,7 @@ const theme = extendTheme({
   styles: {
     global: () => ({
       body: {
-        color: 'default',
+        color: 'rgb(51, 50, 104)',
         bg: 'black',
       }
     })
