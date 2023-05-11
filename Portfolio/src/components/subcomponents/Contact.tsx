@@ -1,7 +1,7 @@
 import React from "react";
 import c from './Contact.module.css';
 
-export default function About(): React.JSX.Element {
-  return <div className={c.con}>
+export default function Contact(): React.JSX.Element {
+  return <div className={c.cont}>
   </div>;
 }
