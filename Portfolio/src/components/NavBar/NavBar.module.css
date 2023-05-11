@@ -1,0 +1,23 @@
+.NavDiv {
+    height: 12vh;
+    width: 99vw;
+    background-color: rgb(36, 35, 35);
+    color:darkkhaki;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.NLinks {
+    height: 12vh;
+    width: 99vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#name{
+    width: 25em;
+    height: fit-content;
+    font-size:xx-large;
+}
