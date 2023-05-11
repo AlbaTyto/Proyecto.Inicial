@@ -8,6 +8,14 @@
     justify-content: space-around;
     align-items: center;
 }
+.NLinks {
+    height: 12vh;
+    width: 99vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #name{
     width: 25em;
     height: fit-content;
