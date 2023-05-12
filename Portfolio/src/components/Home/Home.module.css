@@ -2,6 +2,6 @@
     padding: 1%;
     display: flex;
     height: max-content;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }

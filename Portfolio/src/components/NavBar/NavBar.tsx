@@ -10,7 +10,6 @@ export default function NavBar(): React.JSX.Element {
     </span>
     <div className={n.NLinks}>
       <NavLink to='/about'>About</NavLink>
-      <NavLink to='/projects'>Projects</NavLink>
       <NavLink to='/contact'>Contact</NavLink>
       <Menu>
 						<MenuButton >
