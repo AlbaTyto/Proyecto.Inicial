@@ -1,4 +1,6 @@
 .NavDiv {
+    position: fixed;
+    top: 1vh;
     height: 12vh;
     width: 99vw;
     background-color: rgb(36, 35, 35);
