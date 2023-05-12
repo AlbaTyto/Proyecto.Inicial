@@ -1,0 +1,7 @@
+.footDiv {
+    display: flex;
+    justify-content: center;
+}
+.footLink {
+    margin: 0.5vw 0.5vw 0.5vw 0.5vw;
+}
