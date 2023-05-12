@@ -1,11 +1,15 @@
 import React from "react";
 import f from './Footer.module.css';
 import { Link } from 'react-router-dom';
+import { Flex, Image, Text } from "@chakra-ui/react";
+import { BsLinkedin, BsGithub, BsDiscord } from "react-icons/bs";
 
 export default function Footer(): React.JSX.Element {
-  return <div className={f.footDiv}>
-      <Link className={f.footLink} to='https://github.com/AlbaTyto'>Github</Link>
-      <Link className={f.footLink} to='https://www.linkedin.com/in/gustavo-peretti-gus/'>LinkedIn</Link>
-      <Link className={f.footLink} to=''>Other</Link>
-  </div>;
+  return <Flex
+   className={f.footDiv}
+   >
+      <Link className={f.footLink} to='https://github.com/AlbaTyto'><BsGithub /></Link>
+      <Link className={f.footLink} to='https://www.linkedin.com/in/gustavo-peretti-gus/'><BsLinkedin /></Link>
+      <Link className={f.footLink} to='https://discordapp.com/users/1020451757303795743'><BsDiscord /></Link>
+  </Flex>;
 }
