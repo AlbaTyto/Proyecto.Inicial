@@ -1,4 +1,4 @@
-1. Iconos al Footer
+1. Iconos al Footer DONE
 2. CV para descargar
 3. Form para mensaje
 4. Dar formato al About 
