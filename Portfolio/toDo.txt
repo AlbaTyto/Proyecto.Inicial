@@ -1,0 +1,6 @@
+1. Iconos al Footer
+2. CV para descargar
+3. Form para mensaje
+4. Dar formato al About 
+5. Agregar Proyectos
+5. Deploy
