@@ -1,17 +1,36 @@
 import React from "react";
 import n from './NavBar.module.css';
 import { NavLink } from 'react-router-dom';
-import { Menu, MenuButton, MenuItem, MenuList, Image } from "@chakra-ui/react";
+import { Image, HStack, Button } from "@chakra-ui/react";
 
 export default function NavBar(): React.JSX.Element {
-  return <div className={n.NavDiv}>
-    <span id={n.name}>
-    <NavLink to='/'><h1>Gustavo Peretti</h1></NavLink>
-    </span>
-    <div className={n.NLinks}>
-      <NavLink to='/about'>About</NavLink>
-      <NavLink to='/contact'>Contact</NavLink>
-      <Menu>
+	return <div className={n.NavDiv}>
+		<span id={n.name}>
+			<NavLink to='/'><h1>Gustavo Peretti</h1></NavLink>
+		</span>
+		<div className={n.NLinks}>
+			<NavLink to='/about'>About</NavLink>
+			<NavLink to='/contact'>Contact</NavLink>
+			<HStack>
+				<Button colorScheme='blue' leftIcon={<Image
+					mr={1}
+					boxSize={"1rem"}
+					src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/United-Kingdom-flag-icon.png"
+					alt={"flag"}
+				/>}>
+					cv
+				</Button>
+				<Button colorScheme='blue' leftIcon={<Image
+					mr={1}
+					boxSize={"1rem"}
+					src="https://icons.iconarchive.com/icons/wikipedia/flags/256/ES-Spain-Flag-icon.png"
+					alt={"flag"}
+				/>}>
+					cv
+				</Button>
+			</HStack> 
+			
+			{/* <Menu>
 						<MenuButton >
 							Download CV
 						</MenuButton>
@@ -47,7 +66,7 @@ export default function NavBar(): React.JSX.Element {
 								Spanish
 							</MenuItem>
 						</MenuList>
-					</Menu>
-    </div>
-  </div>;
+					</Menu> */}
+		</div>
+	</div>;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Skills.module.css';
-import { Grid, Heading, Icon } from "@chakra-ui/react";
+import { Card, Grid, Heading, Icon } from "@chakra-ui/react";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiCss3,
@@ -17,9 +17,9 @@ import {
 
 export default function Skills(): React.JSX.Element {
   const iconSize = 10;
-  return <div className={s.proj}>
+  return <Card className={s.proj}>
     <Heading size={"md"} p={5} color={"white"}>
-        {">mySkills"}
+        Skills
       </Heading>
     <Grid
     templateRows='repeat(2, 1fr)'
@@ -40,5 +40,5 @@ export default function Skills(): React.JSX.Element {
       <Icon boxSize={iconSize} color="#e84e31" as={SiGit} />
     </Grid>
 
-  </div>;
+  </Card>;
 }

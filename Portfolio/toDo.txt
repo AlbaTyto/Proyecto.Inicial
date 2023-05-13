@@ -1,14 +1,14 @@
 1. Iconos al Footer DONE
 2. CV para descargar DONE
-3. Agregar Proyectos DONE 
-        //NavBar hacer con grid.
-        //Home con flex
-        //Skills grid  
+3. Agregar Proyectos DONE   
         //DownloadCV Cambio de estilo ej:
                             Spanish
                 DownloadCV
                             English
+        //NavBar hacer con grid.
+        //Home con flex
+        //Skills grid
 4. Dar formato al About 
-5. Agregar Skills
+5. Agregar Skills DONE
 5. Form para mensaje-contacto
 6. Deploy
