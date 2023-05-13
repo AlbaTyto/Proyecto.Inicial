@@ -9,7 +9,8 @@ export interface Filter {
       node_id: string;
       avatar_url: string;
       gravatar_id: string;
-    };  
+    }; 
+    size: number; 
     stargazers_count: number;   
     updated_at: string;    
     visibility: string; 

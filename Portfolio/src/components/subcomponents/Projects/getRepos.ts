@@ -23,5 +23,7 @@ export async function getRepos(): Promise<Filter[]> {
       return data;
     });
   //   stargazers_count
-  return row_repos.filter((rep) => rep.stargazers_count > 0);
+  const select3 = row_repos.filter((rep) => rep.stargazers_count > 0 && rep.updated_at.includes('2023') && rep.size > 10000);
+  console.log(select3);  
+  return select3;
 }
