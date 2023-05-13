@@ -17,7 +17,10 @@ import {
 
 export default function Skills(): React.JSX.Element {
   const iconSize = 10;
-  return <Card className={s.proj}>
+  return <Card 
+  id={s.skills}
+  boxSize='30%'
+  >
     <Heading size={"md"} p={5} color={"white"}>
         Skills
       </Heading>

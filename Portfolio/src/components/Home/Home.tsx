@@ -9,9 +9,9 @@ export default function Home(): React.JSX.Element {
     <Skills />
     <Image
      src='./src/assets/IMG_20230314_151421030.jpg'
-     boxSize='35%'
+     boxSize='30%'
      borderRadius='full'
-     fallbackSrc='https://via.placeholder.com/450'
+     fallbackSrc='https://via.placeholder.com/400'
      alt="'Gustavo's Picture" />
     <Projects />
   </div>;
