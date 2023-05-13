@@ -1,6 +1,6 @@
 {
     "allow_forking": true,
-    "archive_url": "https://api.github.com/repos/AlbaTyto/AlbaTyto/{archive_format}{/ref}",
+    "archive_url": "JSON",
 "archived": false,
 "assignees_url": "https://api.github.com/repos/AlbaTyto/AlbaTyto/assignees{/user}",
 "blobs_url": "https://api.github.com/repos/AlbaTyto/AlbaTyto/git/blobs{/sha}",
@@ -56,7 +56,7 @@
 "open_issues": 0,
 "open_issues_count": 0,
 "owner": {
-    "login": "AlbaTyto",
+    "login": "JSON",
      "id": 89665855,
       "node_id": "MDQ6VXNlcjg5NjY1ODU1",
        "avatar_url": "https://avatars.githubusercontent.com/u/89665855?v=4",
