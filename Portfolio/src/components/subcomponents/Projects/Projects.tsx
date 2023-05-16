@@ -20,7 +20,7 @@ export default function Projects(): React.JSX.Element {
 
   return <Card 
   className={p.proj}
-  boxSize='30%'
+  boxSize='28%'
   >
     <Heading size={"md"} p={5} color={"white"} >
       Projects
