@@ -7,22 +7,22 @@ import AlbaTyto from "./AlbaTyto.json";
 
 
 export default function Projects(): React.JSX.Element {
-  const [reposToRender, setRepoTR] = React.useState<Filter[]>([
+  const [reposToRender, setRepoTR] = React.useState<Filter[]>(
     AlbaTyto
-  ]);
-  React.useEffect(() => {
-    if (reposToRender[0].owner.login === 'JSON') {
-      getRepos()
-        // .then((response) => console.log(response))
-        .then((data) => data?.length > 0 ? setRepoTR(data) : window.alert("Projects couldn't be loaded"))
-    }
-  }, [reposToRender]);
+  );
+  // React.useEffect(() => {
+  //   if (reposToRender[0].owner.login === 'JSON') {
+  //     getRepos()
+  //       // .then((response) => console.log(response))
+  //       .then((data) => data?.length > 0 ? setRepoTR(data) : window.alert("Projects couldn't be loaded"))
+  //   }
+  // }, [reposToRender]);
 
   return <Card 
   className={p.proj}
   boxSize='28%'
   >
-    <Heading size={"md"} p={5} color={"white"} >
+    <Heading size={"md"} p={5} color={"chakra-inverse-text._dark"} >
       Projects
     </Heading>
     {reposToRender.map((repo) =>
@@ -30,6 +30,7 @@ export default function Projects(): React.JSX.Element {
       className={p.card}
         direction={{ base: 'column', sm: 'row' }}
         variant='outline'
+        key={repo.id}
       >
         <Image
         className={p.avatar}
@@ -38,10 +39,9 @@ export default function Projects(): React.JSX.Element {
           src={repo.owner.avatar_url} 
           />
         <CardBody>
-          <Stack key='1' divider={<StackDivider />} spacing='4'>
+          <Stack key={repo.id} divider={<StackDivider />} spacing='4'>
             <Box
-              key={repo.id}
-            >
+              >
               <Heading size='sm' textTransform='uppercase' textAlign={"left"}>
                 {repo.name}
               </Heading>
