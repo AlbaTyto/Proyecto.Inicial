@@ -8,10 +8,13 @@ import Contact from "./components/subcomponents/Contact/Contact";
 import Footer from "./components/Footer/Footer"
 import { Box } from "@chakra-ui/react";
 
-function App() {
 
+function App() {
+  
   return (
-    <Box>
+    <Box
+    bg='0o1'
+    >
         <BrowserRouter>
           <nav>
             <NavBar />

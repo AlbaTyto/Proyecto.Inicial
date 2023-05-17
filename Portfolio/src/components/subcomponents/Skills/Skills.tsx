@@ -23,11 +23,15 @@ export default function Skills(): React.JSX.Element {
     id={s.skills}
     boxSize='28%'
     variant='outline'
+    bg="whiteAlpha.300"
   >
     <Heading size={"md"} p={5} color={"white"}>
       Skills
     </Heading>
-    <Card><Grid
+    <Card
+      bg="whiteAlpha.400"
+      >
+        <Grid
       templateRows='repeat(3, 1fr)'
       templateColumns='repeat(3, 1fr)'
       gap={6}

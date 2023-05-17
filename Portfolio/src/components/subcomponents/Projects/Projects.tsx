@@ -1,15 +1,13 @@
 import React from "react";
 import p from './Projects.module.css';
-import { getRepos } from "./getRepos";
+// import { getRepos } from "./getRepos";
 import { Box, Card, CardBody, Heading, Image, Stack, StackDivider, Text } from "@chakra-ui/react";
-import { Filter } from "./RepoTypes";
+import { type Filter } from "./RepoTypes";
 import AlbaTyto from "./AlbaTyto.json";
 
 
 export default function Projects(): React.JSX.Element {
-  const [reposToRender, setRepoTR] = React.useState<Filter[]>(
-    AlbaTyto
-  );
+  const [reposToRender, setRepoTR] = React.useState<Filter[]>(AlbaTyto);
   // React.useEffect(() => {
   //   if (reposToRender[0].owner.login === 'JSON') {
   //     getRepos()
@@ -21,8 +19,10 @@ export default function Projects(): React.JSX.Element {
   return <Card 
   className={p.proj}
   boxSize='28%'
+  variant='outline'
+  bg="whiteAlpha.300"
   >
-    <Heading size={"md"} p={5} color={"chakra-inverse-text._dark"} >
+    <Heading size={"md"} p={5} color={"white"} >
       Projects
     </Heading>
     {reposToRender.map((repo) =>
@@ -31,6 +31,7 @@ export default function Projects(): React.JSX.Element {
         direction={{ base: 'column', sm: 'row' }}
         variant='outline'
         key={repo.id}
+        bg="whiteAlpha.400"
       >
         <Image
         className={p.avatar}
@@ -58,6 +59,5 @@ export default function Projects(): React.JSX.Element {
           </Stack>
         </CardBody>
       </Card>)}
-
   </Card>;
 }
