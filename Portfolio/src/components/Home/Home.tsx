@@ -8,7 +8,7 @@ export default function Home(): React.JSX.Element {
   return <div className={h.homStyle}>
     <Skills />
     <Image
-     src='./src/assets/IMG_20230314_151421030.jpg'
+     src='/IMG_20230314_151421030.jpg'
      boxSize='30%'
      borderRadius='full'
      fallbackSrc='https://via.placeholder.com/400'
