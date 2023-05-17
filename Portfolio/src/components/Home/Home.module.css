@@ -2,11 +2,6 @@
     padding: 1%;
     display: flex;
     height: max-content;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-
-#img {
-    max-width: 35vw;
-    border-radius: 12vw;
 }

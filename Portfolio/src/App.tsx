@@ -6,13 +6,15 @@ import About from "./components/subcomponents/About/About";
 import Projects from "./components/subcomponents/Projects/Projects";
 import Contact from "./components/subcomponents/Contact/Contact";
 import Footer from "./components/Footer/Footer"
+import { Box } from "@chakra-ui/react";
+
 
 function App() {
-
+  
   return (
-    <>
-
-      <div>
+    <Box
+    bg='0o1'
+    >
         <BrowserRouter>
           <nav>
             <NavBar />
@@ -27,8 +29,7 @@ function App() {
             <Footer />
           </div>
         </BrowserRouter>
-      </div>
-    </>
+    </Box>
   );
 }
 
