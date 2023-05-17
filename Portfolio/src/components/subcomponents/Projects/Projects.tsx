@@ -1,20 +1,12 @@
 import React from "react";
 import p from './Projects.module.css';
-// import { getRepos } from "./getRepos";
 import { Box, Card, CardBody, Heading, Image, Stack, StackDivider, Text } from "@chakra-ui/react";
 import { type Filter } from "./RepoTypes";
 import AlbaTyto from "./AlbaTyto.json";
 
 
 export default function Projects(): React.JSX.Element {
-  const [reposToRender, setRepoTR] = React.useState<Filter[]>(AlbaTyto);
-  // React.useEffect(() => {
-  //   if (reposToRender[0].owner.login === 'JSON') {
-  //     getRepos()
-  //       // .then((response) => console.log(response))
-  //       .then((data) => data?.length > 0 ? setRepoTR(data) : window.alert("Projects couldn't be loaded"))
-  //   }
-  // }, [reposToRender]);
+  const reposToRender: Filter[] = (AlbaTyto);
 
   return <Card 
   className={p.proj}
