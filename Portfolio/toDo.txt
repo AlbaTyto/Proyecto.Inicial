@@ -8,8 +8,8 @@
         //NavBar hacer con grid. no hizo falta DONE
         //Home con flex ya quedó DONE
 4. Agregar Skills DONE
-5. Skills grid
-6. Volver a dar link a los CV
-7. Dar formato al About 
+5. Skills grid DONE
+6. Volver a dar link a los DONE 
+7. Dar formato al About DONE
 8. Form para mensaje-contacto
 9. Deploy

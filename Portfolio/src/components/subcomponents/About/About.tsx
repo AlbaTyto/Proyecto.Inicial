@@ -3,7 +3,11 @@ import a from './About.module.css';
 import { Text } from "@chakra-ui/react";
 
 export default function About(): React.JSX.Element {
-  return <Text className={a.ab}>
-    Full Stack Developer and Veterinary Professional dedicated to dairy cattle, activity that taught me about responsibility, teamwork, scientific methodology, diagnosis, and prioritizing tasks. As a developer, I have knowledge in agile methodologies, GIT, data structures, algorithms, frameworks, CSS, javascript, SQL, and html. I have experience in Front End, Back End, and data architecture using React, Redux, Express, Sequelize, and Postgres. My traits include empathy, curiosity, and the ability to think out of the box while adapting and complying with regulations.
+  return <Text 
+  className={a.ab}
+  fontSize='2xl'
+  >
+    Hello, my name is Gustavo Peretti. I work as a Dairy Cattle Veterinarian and recently learned FullStack Developer skills at #SoyHenry. Now I have tech skills in JavaScript, Express, React, Redux, and more.
+Being a Vet has taught me about responsibility, teamwork, the scientific method, diagnosis, and prioritization. As I have always been a logical thinker, my friends and my brother recommended that I learn about programming. They suggested I try out SoyHenry, and I took a chance. I never thought that this new world could be so thrilling. This program not only gave me knowledge about software programming, but also introduced me to new friends, boosted my self-confidence, and provided me with a new perspective.Hello, my name is Gustavo Peretti. I work as a Dairy Cattle Veterinarian and recently learned FullStack Developer skills at #SoyHenry. Now I have tech skills in JavaScript, Express, React, Redux, and more. Being a Vet has taught me about responsibility, teamwork, the scientific method, diagnosis, and prioritization. As I have always been a logical thinker, my friends and my brother recommended that I learn about programming. They suggested I try out SoyHenry, and I took a chance. I never thought that this new world could be so thrilling. This program not only gave me knowledge about software programming, but also introduced me to new friends, boosted my self-confidence, and provided me with a new perspective.
   </Text>;
 }
