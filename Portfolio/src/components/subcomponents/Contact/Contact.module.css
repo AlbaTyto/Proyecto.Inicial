@@ -1,0 +1,11 @@
+.contDiv {
+    justify-content: center;
+    align-items:flex-end;
+    height: 60vh;
+}
+
+.cont {
+    width: 35vw;
+    display: inline-flex;
+    justify-content: space-between;
+}

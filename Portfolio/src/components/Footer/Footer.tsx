@@ -12,7 +12,6 @@ export default function Footer(): React.JSX.Element {
       <Link className={f.footLink} to='https://github.com/AlbaTyto'><BsGithub /></Link>
       <Link className={f.footLink} to='https://www.linkedin.com/in/gustavo-peretti-gus/'><BsLinkedin /></Link>
       <Link className={f.footLink} to='https://discordapp.com/users/1020451757303795743'><BsDiscord /></Link>
-      </Flex>
-      
+      </Flex>      
   </Flex>;
 }
