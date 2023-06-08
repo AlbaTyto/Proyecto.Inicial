@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Skills.module.css';
-import { Card, Grid, Heading, Icon, } from "@chakra-ui/react";
+import { Card, Flex, Heading, Icon, } from "@chakra-ui/react";
 import {
   FaNodeJs, FaReact,
   FaSlack
@@ -21,7 +21,7 @@ export default function Skills(): React.JSX.Element {
   const iconSize = 10
   return <Card
     id={s.skills}
-    boxSize='28%'
+    boxSize={['90%','28%']}
     variant='outline'
     bg="whiteAlpha.300"
   >
@@ -31,9 +31,11 @@ export default function Skills(): React.JSX.Element {
     <Card
       bg="whiteAlpha.400"
       >
-        <Grid
-      // templateRows='repeat(3, 1fr)'
-      templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)'}}
+        <Flex
+        flexWrap="wrap"
+        justifyContent="space-between"
+      // templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(auto-fit, minmax(45px, 1fr))' }}
+      // autoFlow="column"
       gap={6}
     >
       <Icon className={s.icons} boxSize={iconSize} color="#e84e31" as={SiGit} />
@@ -51,7 +53,7 @@ export default function Skills(): React.JSX.Element {
       <img className={s.icons} rel="icon" src="/vite.svg" />
       <img className={s.icons} rel="icon" src="/chaijs_logo_icon_168435.svg" />
       <img className={s.icons} rel="icon" src="https://jestjs.io/img/favicon/favicon.ico" />
-    </Grid>
+    </Flex>
     </Card>    
   </Card>;
 }
