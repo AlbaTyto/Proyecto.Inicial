@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Skills.module.css';
-import { Card, Grid, Heading, Icon } from "@chakra-ui/react";
+import { Card, Grid, Heading, Icon, } from "@chakra-ui/react";
 import {
   FaNodeJs, FaReact,
   FaSlack
@@ -32,8 +32,8 @@ export default function Skills(): React.JSX.Element {
       bg="whiteAlpha.400"
       >
         <Grid
-      templateRows='repeat(3, 1fr)'
-      templateColumns='repeat(3, 1fr)'
+      // templateRows='repeat(3, 1fr)'
+      templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)'}}
       gap={6}
     >
       <Icon className={s.icons} boxSize={iconSize} color="#e84e31" as={SiGit} />
