@@ -7,15 +7,13 @@ import Skills from '../subcomponents/Skills/Skills';
 export default function Home(): React.JSX.Element {
   return <Flex
     direction={{ base: 'column', md: 'row' }}
-    padding='1%'
-    height='max-content'
     justifyContent="space-around"
     alignItems='center'
   >
     <Skills />
     <Image
       src='/IMG_20230314_151421030.jpg'
-      boxSize={['100%', '30%']}
+      boxSize={['100%', '33%']}
       borderRadius='full'
       fallbackSrc='https://via.placeholder.com/400'
       alt="'Gustavo's Picture" />
