@@ -21,9 +21,10 @@ export default function Skills(): React.JSX.Element {
   const iconSize = 10
   return <Card
     id={s.skills}
-    boxSize={['90%','28%']}
+    flex='1'
     variant='outline'
     bg="whiteAlpha.300"
+    m='1em'
   >
     <Heading size={"md"} p={5} color={"white"}>
       Skills
