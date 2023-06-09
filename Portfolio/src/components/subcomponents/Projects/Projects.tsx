@@ -21,10 +21,11 @@ export default function Projects(): React.JSX.Element {
     {reposToRender.map((repo) =>
       <Card
         display='flex'
-        direction={{ base: 'column', sm: 'row' }}
+        direction={{ base: 'column', md: 'row' }}
         variant='outline'
         key={repo.id}
         bg="whiteAlpha.400"
+        overflow="hidden"
       >
         <Box
           flexShrink={0}
@@ -55,10 +56,10 @@ export default function Projects(): React.JSX.Element {
               <Text mt={2} fontSize='sm' textAlign={"left"}>
                 {repo.language}
               </Text>
-              <Text mt={2} fontSize='xs' textAlign={"right"}>
+              <Text mt={2} fontSize='xs' textAlign={"right"} hideBelow='sm'>
                 Created at: {repo.created_at}
               </Text>
-              <Text mt={2} fontSize='xs' textAlign={"right"}>
+              <Text mt={2} fontSize='xs' textAlign={"right"} hideBelow='sm'>
                 Updated at: {repo.updated_at}
               </Text>
             </Box>

@@ -6,7 +6,7 @@ import Skills from '../subcomponents/Skills/Skills';
 
 export default function Home(): React.JSX.Element {
   return <Flex
-    direction={['column', 'row']}
+    direction={{ base: 'column', md: 'row' }}
     padding='1%'
     height='max-content'
     justifyContent="space-around"
