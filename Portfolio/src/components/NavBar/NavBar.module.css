@@ -17,10 +17,38 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.2em;
 }
-
+@media(max-width: 870px) {
+    .NLinks {
+        padding: 0 0 0 15%;
+        justify-content: space-between;
+    font-size: 1em;
+    }
+}
+@media(max-width: 720px) {
+    .NLinks {
+        padding: 0 0 0 10%;
+        justify-content: space-between;
+    font-size: 0.7em;
+    }
+}
+@media(max-width: 380px) {
+    .NLinks {
+        padding: 0 0 0 0;
+        font-size: 0.5em;
+    }
+}
 #name{
     width: 25em;
     height: fit-content;
     font-size: 2em;
 }
+@media(max-width: 600px) {
+    #name{
+        width: 14em;
+        height: fit-content;
+        font-size: 1em;
+    }
+}
+
