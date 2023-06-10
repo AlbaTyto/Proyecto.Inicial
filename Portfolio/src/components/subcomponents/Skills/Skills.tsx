@@ -21,7 +21,7 @@ export default function Skills(): React.JSX.Element {
   const iconSize = 10
   return <Card
     id={s.skills}
-    flex='1'
+    w={{ base: '94%', md: '29.5%' }}
     variant='outline'
     bg="whiteAlpha.300"
     m='1em'
