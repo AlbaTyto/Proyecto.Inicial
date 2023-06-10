@@ -9,8 +9,8 @@ export default function Projects(): React.JSX.Element {
   const reposToRender: Filter[] = (AlbaTyto);
 
   return <Card
+    w={{ base: '94%', md: '29.5%' }}
     display='flex'
-    flex='1'
     variant='outline'
     bg="whiteAlpha.300"
     m='1em'
