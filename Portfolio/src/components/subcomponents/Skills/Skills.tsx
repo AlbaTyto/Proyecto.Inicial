@@ -35,8 +35,6 @@ export default function Skills(): React.JSX.Element {
         <Flex
         flexWrap="wrap"
         justifyContent="space-between"
-      // templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(auto-fit, minmax(45px, 1fr))' }}
-      // autoFlow="column"
       gap={6}
     >
       <Icon className={s.icons} boxSize={iconSize} color="#e84e31" as={SiGit} />
