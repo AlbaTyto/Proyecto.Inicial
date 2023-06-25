@@ -96,3 +96,9 @@ Puedes seguir los siguientes pasos para lograrlo:
 Recuerda que en una aplicación móvil con React Native, la base de datos SQLite estará disponible localmente en el dispositivo móvil y podrás acceder a ella y sincronizar los datos con tu aplicación web cuando sea necesario.
 
 Es importante tener en cuenta que la configuración y la implementación específicas pueden variar dependiendo de los detalles de tu proyecto y las bibliotecas que elijas utilizar. Asegúrate de consultar la documentación oficial y los recursos relevantes para obtener información detallada y actualizada mientras desarrollas tu aplicación móvil.
+
+Recuerda que la integración de SQLite en la aplicación móvil te permitirá crear y gestionar una base de datos local en el dispositivo móvil. Desde la aplicación móvil, podrás realizar operaciones de inserción, actualización, eliminación y consulta en la base de datos SQLite.
+
+Por otro lado, en la carpeta del servidor, donde tienes tu local server, podrás definir las rutas y los endpoints necesarios para la comunicación entre la aplicación web y la aplicación móvil. A través de estas rutas, la aplicación web podrá solicitar y recibir datos almacenados en la base de datos SQLite de la aplicación móvil.
+
+En resumen, la integración de SQLite se realiza en la aplicación móvil, mientras que la configuración de las rutas y la comunicación con la aplicación web se realiza en el servidor.
