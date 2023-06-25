@@ -1,4 +1,6 @@
 import { Filter } from "./RepoTypes";
+import * as fs from 'fs';
+
 const gitUser: string | undefined = import.meta.env.VITE_GITHUB_USER;
 console.log(gitUser);
 
@@ -19,10 +21,15 @@ export async function getRepos(): Promise<Filter[] | undefined> {
     )
       .then((response) => response.json())
       .then((data: Filter[]) => {
-        // Aquí puedes trabajar con los datos obtenidos de la API de GitHub
+        // Aquí puedo trabajar con los datos obtenidos de la API de GitHub
         console.log(data);
+        fs.writeFile('archivo.json', JSON.stringify(data),'utf8', (err) => { 
+        if (err) throw err; 
+        console.log('The file has been saved!');
+      })
         return data;
       });
+      
     //   stargazers_count
     const select3 = row_repos.filter(
       (rep) =>
