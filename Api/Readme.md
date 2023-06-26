@@ -1,4 +1,4 @@
-Sí, utilizar SQLite como base de datos local puede ser una alternativa viable para almacenar la información en tu dispositivo y acceder a ella desde una aplicación que se ejecuta en el navegador. A continuación, te proporcionaré un resumen de cómo puedes lograr esto:
+Utilizar SQLite como base de datos local puede ser una alternativa viable para almacenar la información en tu dispositivo y acceder a ella desde una aplicación que se ejecuta en el navegador. A continuación, te proporcionaré un resumen de cómo puedes lograr esto:
 
 1. Configuración del entorno:
    - Asegúrate de tener instalado Node.js en tu dispositivo para poder utilizar SQLite.
