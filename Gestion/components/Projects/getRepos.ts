@@ -1,14 +1,16 @@
 import { Filter } from "./RepoTypes";
-// import * as fs from 'fsnpm f';
 
-const gitUser: string | undefined = import.meta.env.VITE_GITHUB_USER;
-console.log(gitUser);
-
+//get user and token from env:
+/* 
+const gitUser: string | undefined = import.meta.env.VITE_GITHUB_USER; //no need to import user
 const gitToken: string | undefined = import.meta.env.VITE_GITHUB_TOKEN;
-console.log(gitToken);
+*/ 
+const gitToken: string= ''; //just to skip error
 
 export async function getRepos(): Promise<Filter[] | undefined> {
   try {
+
+    // Get repo info from github:
     const row_repos = await fetch(
       `https://api.github.com/user/repos?visibility=all`,
       {
@@ -21,25 +23,18 @@ export async function getRepos(): Promise<Filter[] | undefined> {
     )
       .then((response) => response.json())
       .then((data: Filter[]) => {
-        // Aquí puedo trabajar con los datos obtenidos de la API de GitHub
-      //   console.log(data);
-      //   fs.writeFile('archivo.json', JSON.stringify(data),'utf8', (err) => { 
-      //   if (err) throw err; 
-      //   console.log('The file has been saved!');
-      // })
         return data;
       });
       
-    //   stargazers_count
-    const select3 = row_repos.filter(
+    //   Filter some repos:
+    const selected = row_repos.filter(
       (rep) =>
         rep.stargazers_count > 0 &&
         rep.updated_at.includes("2023") &&
         rep.size > 5000 &&
         !rep.name.includes("FT-M")
     );
-    console.log(select3);
-    return select3;
+    return selected;
   } catch (error: unknown) {
     if (error instanceof Error) {
       alert(`Error al solicitar informacion de Github: ${error.message}`);
@@ -48,3 +43,17 @@ export async function getRepos(): Promise<Filter[] | undefined> {
     }
   }
 }
+
+//Code below was attended to be used getting info directly from github API at te beggining of the project
+/* // const [reposToRender, setRepoTR] = React.useState<Filter[]>([
+  //   ...AlbaTyto
+  // ]);
+  // React.useEffect(() => {
+  //   if(reposToRender[0].owner.login === 'JSON'){
+  //     getRepos()
+  //     .then((response) => console.log(response))
+      // .then((data: Filter[]) => data?.length > 0 ?
+      //  setRepoTR(data) : 
+      //  window.alert("Projects couldn't be loaded"))
+  //   }
+  // }, [reposToRender]); */
