@@ -11,8 +11,6 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({ 
   config,
-//  })
-// const theme = extendTheme({
   styles: {
     global: () => ({
       body: {

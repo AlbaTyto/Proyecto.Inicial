@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Gestion",
+    "slug": "Gestion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/IconPage.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/IconPage.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/IMG_20230314_151421030.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/IconPage.png"
+    }
+  }
+}
