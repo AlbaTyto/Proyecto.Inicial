@@ -1,7 +1,7 @@
 import React from "react";
 import f from './Footer.module.css';
-import { Link } from 'react-router-dom';
-import { Flex } from "@chakra-ui/react";
+import { Link as ReactLink } from "react-router-dom";
+import { Flex, Link } from "@chakra-ui/react";
 import { BsLinkedin, BsGithub, BsDiscord } from "react-icons/bs";
 
 export default function Footer(): React.JSX.Element {
@@ -10,9 +10,9 @@ export default function Footer(): React.JSX.Element {
    >
     <Flex
     bg='whiteAlpha.300'>
-      <Link className={f.footLink} to='https://github.com/AlbaTyto'><BsGithub /></Link>
-      <Link className={f.footLink} to='https://www.linkedin.com/in/gustavo-peretti-gus/'><BsLinkedin /></Link>
-      <Link className={f.footLink} to='https://discordapp.com/users/1020451757303795743'><BsDiscord /></Link>
+      <Link as={ReactLink} className={f.footLink} to='https://github.com/AlbaTyto' isExternal><BsGithub /></Link>
+      <Link as={ReactLink} className={f.footLink} to='https://www.linkedin.com/in/gustavo-peretti-gus/' isExternal><BsLinkedin /></Link>
+      <Link as={ReactLink} className={f.footLink} to='https://discordapp.com/users/1020451757303795743' isExternal><BsDiscord /></Link>
       </Flex>      
   </Flex>;
 }
