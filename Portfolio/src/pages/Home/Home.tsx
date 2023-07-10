@@ -1,8 +1,8 @@
 // import h from './Home.module.css';
 import React from "react";
 import { Flex, Image } from '@chakra-ui/react';
-import Projects from '../subcomponents/Projects/Projects';
-import Skills from '../subcomponents/Skills/Skills';
+import Projects from '../../components/Projects/Projects';
+import Skills from '../../components/Skills/Skills';
 
 export default function Home(): React.JSX.Element {
   return <Flex

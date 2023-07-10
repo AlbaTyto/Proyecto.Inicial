@@ -2,7 +2,7 @@ import React from "react";
 // import p from './Projects.module.css';
 import {  Card, Heading, Link } from "@chakra-ui/react";
 import { type Filter } from "./RepoTypes";
-import AlbaTyto from "../../../assets/InfoJSONs/AlbaTyto.json";
+import AlbaTyto from "../../assets/InfoJSONs/AlbaTyto.json";
 import ProjCard from "./ProjCard";
 import { Link as ReactLink } from "react-router-dom";
 // import { getRepos } from "./getRepos";
