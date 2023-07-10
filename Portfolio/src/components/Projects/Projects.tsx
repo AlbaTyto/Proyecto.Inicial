@@ -23,10 +23,8 @@ export default function Projects(): React.JSX.Element {
     </Heading>
     {reposToRender.map((repo) => <div>
     {repo.page_link ? 
-    <Link as={ReactLink} to={`${repo.page_link}`}> <ProjCard repo={repo}/> </Link>: 
+    <Link as={ReactLink} to={`${repo.page_link}`} isExternal> <ProjCard repo={repo}/> </Link>: 
     <ProjCard repo={repo}/>}
-    </div>)}
-  
-  
+    </div>)} 
   </Card>;
 }
