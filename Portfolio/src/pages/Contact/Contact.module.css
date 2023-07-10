@@ -1,7 +1,13 @@
 .contDiv {
     justify-content: center;
-    align-items:flex-end;
+    align-items: center;
     height: 60vh;
+    background-color: #484848;
+    border-radius: 1em;
+    margin: 2dvh 10dvw 2dvh 10dvw;
+    padding: 2dvh 2dvw 2dvh 2dvw;
+    text-align: right;
+    color: rgb(27, 25, 82)
 }
 
 .cont {
