@@ -2,7 +2,7 @@ import React from "react";
 // import p from './Projects.module.css';
 import {  Card, Heading, Link } from "@chakra-ui/react";
 import { type Filter } from "./RepoTypes";
-import AlbaTyto from "../../../assets/InfoJSONs/AlbaTyto.json";
+import AlbaTyto from "../../assets/InfoJSONs/AlbaTyto.json";
 import ProjCard from "./ProjCard";
 import { Link as ReactLink } from "react-router-dom";
 // import { getRepos } from "./getRepos";
@@ -23,10 +23,8 @@ export default function Projects(): React.JSX.Element {
     </Heading>
     {reposToRender.map((repo) => <div>
     {repo.page_link ? 
-    <Link as={ReactLink} to={`${repo.page_link}`}> <ProjCard repo={repo}/> </Link>: 
+    <Link as={ReactLink} to={`${repo.page_link}`} isExternal> <ProjCard repo={repo}/> </Link>: 
     <ProjCard repo={repo}/>}
-    </div>)}
-  
-  
+    </div>)} 
   </Card>;
 }
