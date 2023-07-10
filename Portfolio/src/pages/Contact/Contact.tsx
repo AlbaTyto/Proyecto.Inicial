@@ -1,22 +1,25 @@
 import React from "react";
 import c from './Contact.module.css';
 import {
-  Flex
+  Flex, Grid, GridItem 
 } from '@chakra-ui/react';
-import { BsWhatsapp, BsMailbox, BsSlack } from "react-icons/bs";
+import { BsWhatsapp, BsMailbox } from "react-icons/bs";
 
 export default function Contact(): React.JSX.Element {
   return <Flex
     className={c.contDiv}
   >
-    <Flex
-      flexDirection="column"
+    <Grid
+    templateRows='repeat(2, 1fr)'
+    templateColumns='repeat(8, 1fr)' 
       fontSize={"2xl"}
     >
-      <div className={c.cont}><BsMailbox /> gperettig@gmail.com </div>
-      <div className={c.cont}><BsWhatsapp /> +54 9 3874628790 </div>
-      <div className={c.cont}><BsSlack /> Gustavo Peretti (U042MP77KRS)</div>
+      <GridItem gridRow={1} gridColumn={1}><BsMailbox /></GridItem>
+      <GridItem gridRow={1} gridColumn={'2/8'}>gperettig@gmail.com </GridItem>
+      <GridItem gridRow={2} gridColumn={1}><BsWhatsapp /></GridItem>
+      <GridItem gridRow={2} gridColumn={'2/8'}> +54 9 3874628790 </GridItem>
+      {/* <div className={c.cont}><BsSlack /> Gustavo Peretti (U042MP77KRS)</div> */}
      
-    </Flex>
+    </Grid>
   </Flex>;
 }
