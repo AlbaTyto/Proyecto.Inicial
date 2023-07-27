@@ -8,7 +8,7 @@ import { Link as ReactLink } from "react-router-dom";
 // import { getRepos } from "./getRepos";
 
 
-export default function Projects(): React.JSX.Element {
+export default function ProjectsHome(): React.JSX.Element {
  
   const reposToRender: Filter[] = (AlbaTyto);
   return <Card

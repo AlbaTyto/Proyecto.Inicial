@@ -1,8 +1,8 @@
 // import h from './Home.module.css';
 import React from "react";
 import { Flex, Image } from '@chakra-ui/react';
-import Projects from '../../components/Projects/Projects';
 import Skills from '../../components/Skills/Skills';
+import ProjectsHome from "../../components/ProjectsComp/ProjectsHome";
 
 export default function Home(): React.JSX.Element {
   return <Flex
@@ -17,6 +17,6 @@ export default function Home(): React.JSX.Element {
       borderRadius='full'
       fallbackSrc='https://via.placeholder.com/400'
       alt="'Gustavo's Picture" />
-    <Projects />
+    <ProjectsHome />
   </Flex>;
 }
