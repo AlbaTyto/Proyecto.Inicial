@@ -19,7 +19,8 @@ export default function ProjectsHome(): React.JSX.Element {
     m='1em'
   >
     <Heading size={"md"} p={5} color={"white"} >
-      Projects
+      <Link as={ReactLink} to="/projects">Projects</Link>
+      
     </Heading>
     {reposToRender.map((repo) => <div>
     {repo.page_link ? 
