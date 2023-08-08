@@ -11,7 +11,6 @@
     align-items: center;
 }
 .NLinks {
-    padding: 0 0 0 20%;
     height: 12vh;
     width: 99vw;
     display: flex;
@@ -21,22 +20,13 @@
 }
 @media(max-width: 870px) {
     .NLinks {
-        padding: 0 0 0 15%;
         justify-content: space-between;
     font-size: 1em;
-    }
-}
-@media(max-width: 720px) {
-    .NLinks {
-        padding: 0 0 0 10%;
-        justify-content: space-between;
-    font-size: 0.7em;
     }
 }
 @media(max-width: 380px) {
     .NLinks {
         padding: 0 0 0 0;
-        font-size: 0.5em;
     }
 }
 #name{
@@ -44,11 +34,14 @@
     height: fit-content;
     font-size: 2em;
 }
-@media(max-width: 600px) {
+@media(max-width: 650px) {
     #name{
         width: 14em;
         height: fit-content;
         font-size: 1em;
+    }
+    .NLinks {   
+    padding: 0 0 0 11%;
     }
 }
 
