@@ -13,8 +13,7 @@ export default function NavBar(): React.JSX.Element {
 			<NavLink to='/contact'>Contact</NavLink>
 			<HStack
 			pr={{base: '0.5em', lg: '0'}}>
-				<Link href="https://drive.google.com/file/d/1FxfJwfJM5SHFAvjrk9AR-eC4tXPnqsrf/view?usp=share_link" isExternal>
-					<Button
+				<Button
 						w={{ base: '3em', md: '4em' }}
 						h={{ base: '2.5em', md: '1.8em' }}
 						colorScheme='blue'
@@ -23,11 +22,13 @@ export default function NavBar(): React.JSX.Element {
 							boxSize={"1em"}
 							src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/United-Kingdom-flag-icon.png"
 							alt={"flag"}
-						/>}>
+						/>}
+						as={Link} 
+						href="https://drive.google.com/file/d/1FxfJwfJM5SHFAvjrk9AR-eC4tXPnqsrf/view?usp=share_link"
+						isExternal
+						>
 						cv
 					</Button>
-				</Link>
-				<Link href="https://drive.google.com/file/d/1SpzwMKR6Knc0sPKdyfM63cjB82q6YGe0/view?usp=share_link" isExternal>
 					<Button
 						w={{ base: '3em', md: '4em' }}
 						h={{ base: '2.5em', md: '1.8em' }}
@@ -37,10 +38,13 @@ export default function NavBar(): React.JSX.Element {
 							boxSize={"1em"}
 							src="https://icons.iconarchive.com/icons/wikipedia/flags/256/ES-Spain-Flag-icon.png"
 							alt={"flag"}
-						/>}>
+						/>}
+						as={Link} 
+						href="https://drive.google.com/file/d/1SpzwMKR6Knc0sPKdyfM63cjB82q6YGe0/view?usp=share_link" 
+						isExternal
+						>
 						cv
 					</Button>
-				</Link>
 			</HStack>
 		</div>
 	</div>;
