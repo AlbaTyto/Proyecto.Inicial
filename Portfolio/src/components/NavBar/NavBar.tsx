@@ -1,7 +1,7 @@
 import React from "react";
 import n from './NavBar.module.css';
 import { NavLink } from 'react-router-dom';
-import { Image, HStack, Button, Link, Stack } from "@chakra-ui/react";
+import { HStack, Link, Stack } from "@chakra-ui/react";
 import FlagCV from "../FlagCV/FlagCV";
 
 export default function NavBar(): React.JSX.Element {
