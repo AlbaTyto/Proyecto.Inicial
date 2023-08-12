@@ -14,5 +14,7 @@ export interface ProjectInfo {
     stargazers_count: number;   
     updated_at: string;    
     visibility: string; 
+    video: string,
+    image: string,
     [propName: string]: unknown;  
   }

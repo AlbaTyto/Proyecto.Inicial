@@ -2,14 +2,15 @@ import React from "react";
 import p from './Projects.module.css';
 import { Box, Card, CardBody, Heading, Image, Stack, StackDivider, Text } from "@chakra-ui/react";
 import { type ProjectInfo } from "./RepoTypes";
-// import AlbaTyto from "../../../assets/InfoJSONs/AlbaTyto.json";
+import pics from "../../assets/pictureIndex";
 // import { getRepos } from "./getRepos";
 
 type Props = {
     repo: ProjectInfo
 }
 export default function ProjCard(props: Props): React.JSX.Element {
-    const repo = props.repo;
+    const repo = props.repo;     
+    const pic = repo.image ? pics[repo.image] : null;
     return<>
     <Card
         display='flex'
@@ -25,7 +26,7 @@ export default function ProjCard(props: Props): React.JSX.Element {
           <Image
             boxSize='3.5rem'
             borderRadius="full"
-            src={repo.owner.avatar_url}
+            src={pic}
             alt="Repo Owner"
             className={p.avatar}
           />

@@ -216,7 +216,7 @@
       "pull": true
     },
     "video": "https://youtu.be/0C8XiBlsJhg",
-    "image": "MySeam.png"
+    "image": "MySeam"
   },
   {
     "allow_forking": true,
@@ -313,6 +313,6 @@
     "watchers_count": 1,
     "web_commit_signoff_required": false,
     "video": "https://youtu.be/0C8XiBlsJhg",
-    "image": "RickandMorty.png"
+    "image": "RickandMorty"
   }
 ]
