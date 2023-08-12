@@ -15,11 +15,15 @@ export default function ProjScroller(): React.JSX.Element {
       setMainProj(reposToRender[0])
   }, [reposToRender])
 
-  return <Flex className={p.wrapper}>
-    <div className={p.main}>
+  return <Flex 
+  className={p.wrapper}
+  flexDirection={'column'}>
+    <div id={p.currenrProj}>
       <ProjCard repo={mainProj}/>
-    </div>
-    <Grid className={p.grid_four_column}>
+      </div>
+    <Grid className={p.grid_four_column}
+    gridTemplateColumns={'repeat(3, 1fr)'}
+    >
       {reposToRender.map((e,i)=>{
         return(
           <section key={i} className={p.grid_item}

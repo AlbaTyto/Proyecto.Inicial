@@ -4,7 +4,7 @@ import { Heading } from '@chakra-ui/react';
 
 export default function Projects(): React.JSX.Element {
   return <div>
-    <Heading>Proyectos</Heading>
+    <Heading>Projects</Heading>
     <ProjScroller />
   </div>
 }
