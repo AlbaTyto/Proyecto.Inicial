@@ -1,12 +1,12 @@
 import React from "react";
 import p from './Projects.module.css';
 import { Box, Card, CardBody, Heading, Image, Stack, StackDivider, Text } from "@chakra-ui/react";
-import { type Filter } from "./RepoTypes";
+import { type ProjectInfo } from "./RepoTypes";
 // import AlbaTyto from "../../../assets/InfoJSONs/AlbaTyto.json";
 // import { getRepos } from "./getRepos";
 
 type Props = {
-    repo: Filter
+    repo: ProjectInfo
 }
 export default function ProjCard(props: Props): React.JSX.Element {
     const repo = props.repo;

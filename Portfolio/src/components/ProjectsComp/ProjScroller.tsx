@@ -1,15 +1,15 @@
 import React from "react";
 import p from './Projects.module.css';
 import { Flex, Grid } from "@chakra-ui/react";
-import { type Filter } from "./RepoTypes";
+import { type ProjectInfo } from "./RepoTypes";
 import AlbaTyto from "../../assets/InfoJSONs/AlbaTyto.json";
 import ProjCard from "./ProjCard";
 
 
 export default function ProjScroller(): React.JSX.Element {
  
-  const reposToRender: Filter[] = (AlbaTyto);
-  const [mainProj, setMainProj] = React.useState<Filter>(reposToRender[0]);
+  const reposToRender: ProjectInfo[] = (AlbaTyto);
+  const [mainProj, setMainProj] = React.useState<ProjectInfo>(reposToRender[0]);
   
   React.useEffect(()=>{
       setMainProj(reposToRender[0])
