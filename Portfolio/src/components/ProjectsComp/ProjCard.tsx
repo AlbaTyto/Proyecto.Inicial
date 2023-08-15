@@ -11,7 +11,6 @@ type Props = {
 export default function ProjCard(props: Props): React.JSX.Element {
     const repo = props.repo;     
     const pic = pics[repo.image];
-    console.log(pic);
     
     return<>
     <Card
